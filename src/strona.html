@@ -1,0 +1,67 @@
+<html> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Linie lotnicze</title>
+        <link rel="stylesheet" type="text/css" href="css\strona.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+	</head>
+	<body> 
+    <div class="bg"><p>Czy chcesz podróżować...</p>
+      <div style="text-align: center;" id="slogan">
+        <div style="display: inline-block; text-align: left;" >
+          Futurystycznie?<br><font color="#fbc60d">Luksusowo?</font><br>Yeah?
+        </div><br><div id="yeah">FLYEAH!</div>
+      </div>
+
+		<div id="root">
+        </div>
+        <form id="wyborLotu">
+          <span class="lotniska">Z: 
+            <select id="z_lotniska">
+              <option value="Balice">Balice</option>
+              <option value="Mediolan">Mediolan</option>
+          		<option value="Paryz">Paryz</option>
+          		<option value="Nowy York">Nowy York</option>
+          		<option value="Barcelona">Barcelona</option>
+            </select>Do:
+            <select id="do_lotniska">
+              <option value="Mediolan">Mediolan</option>
+              <option value="Balice">Balice</option>
+          		<option value="Paryz">Paryz</option>
+          		<option value="Nowy York">Nowy York</option>
+          		<option value="Barcelona">Barcelona</option>
+            </select>
+          </span>
+          
+          <span class="daty">Miesiąc:
+         <select id="miesiac">
+            <option value="01">Styczeń</option>
+            <option value="02">Luty</option>
+            <option value="03">Marzec</option>
+            <option value="04">Kwiecień</option>
+            <option value="05">Maj</option>
+            <option value="06">Czerwiec</option>
+            <option value="07">Lipiec</option>
+            <option value="08">Sierpień</option>
+            <option value="09">Wrzesień</option>
+            <option value="10">Październik</option>
+            <option value="11">Listopad</option>
+            <option value="12">Grudzień</option>
+          </select>Rok:
+          <select id="rok">
+            <option value="2019">2019</option>
+          </select>
+          <input type="button" onclick="przetworz()" value="OK" id="okButton">
+        </span>
+          <br><div id="kontener_dni">
+          </div>  
+        </form>
+          <span id="kwota"></span>
+          <button onclick="czyZalogowany()" id="zaloguj">Zaloguj się</button>
+          <button onclick="wyloguj()" id="wyloguj">Wyloguj się</button> 
+           
+        </div>
+
+        <script src="js\strona.js" type="text/javascript" defer></script>
+	</body> 
+</html>

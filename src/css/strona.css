@@ -1,0 +1,212 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+
+  background-image: url("../images/bg2.jpg");
+  color: white;
+
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position:relative;
+  z-index:1;
+  opacity:1;
+ position: relative;
+}
+
+
+.bg:after{
+
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.3);
+  z-index:-1;
+
+}
+#slogan{
+  font-family: 'Merienda', cursive;
+  font-size: 2.5vw;
+  position: relative;
+  /*padding-top: 1.5%;*/
+  color: #663d00;
+  text-shadow: 0 1px black;
+
+}
+p{
+  text-align: center;
+  font-family: 'Merienda', cursive;
+  padding-top: 1%;
+  margin-bottom: 1%;
+  font-size: 3vw;
+  color: #fbc60d;
+  text-shadow: 0 1px black;
+}
+
+#yeah{
+  color: #fbc60d;
+  font-family: 'Merienda', cursive;
+  letter-spacing: 1px;
+ position: fixed;
+ width: 100%;
+ bottom: 1.5%;
+ font-size: 80px;
+ text-shadow: 0 1.5px black;
+}
+
+.lotniska{
+  padding-left: 14%;
+  padding-right: 18%;
+  /*padding-top: 3%;*/
+  font-family: 'Merienda', cursive;
+  text-shadow: 0 0.5px black;
+  font-size: 1.5vw;
+  color: #663d00;
+/*position: absolute;*/
+
+}
+
+.lotniska #z_lotniska, .lotniska #do_lotniska{
+  font-family: 'Merienda', cursive;
+ padding: 0.5% 1.5%;
+ margin-right: 4%;
+ background-color: rgba(0, 0, 0, 0.2);
+ border: none;
+ border-radius: 5px;
+ outline: none;
+ transition: background-color 0.3s;
+}
+.lotniska #z_lotniska:hover, .lotniska #do_lotniska:hover{
+   background-color: rgba(0, 0, 0, 0.4);
+   cursor: pointer;
+}
+
+
+
+.daty{
+  font-family: 'Merienda', cursive;
+  text-shadow: 0 0.5px black;
+  font-size: 1.4vw;
+  color: #663d00;
+
+}
+
+.daty #miesiac, .daty #rok, .daty #okButton {
+  font-family: 'Merienda', cursive;
+  padding: 0.5% 1.5%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s;
+
+}
+.daty #miesiac:hover, .daty #rok:hover, .daty #okButton:hover{
+   background-color: rgba(0, 0, 0, 0.4);
+   cursor: pointer;
+}
+
+.daty #miesiac{
+   margin-right: 3%;
+}
+
+#wyborLotu{
+  padding-top: 3%;
+}
+#kontener_dni{
+  float:right;
+  padding-top: 1.5%;
+  padding-right: 22.5%;
+  font-family: 'Merienda', cursive;
+  text-shadow: 0 0.5px black;
+  font-size: 1.3vw;
+  color: #663d00;
+
+}
+#kontener_dni #dni{
+  padding: 2% 5%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#przyciskOK{
+  border:none;
+  outline: none;
+  color:#000;
+  font-family: 'Merienda', cursive;
+  background: #fbc550;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#przyciskOK:hover{
+  background: #e19b05;
+}
+
+#kontener_dni #dni:hover{
+   background-color: rgba(0, 0, 0, 0.4);
+   cursor: pointer;
+}
+
+
+#zaloguj{
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  margin-right: 30%;
+  padding: 1% 2.5%;
+  background-color: rgba(255, 195, 77, 0.6);
+  font-family: 'Merienda', cursive;
+  font-size: 1.1vw;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s;
+ 
+}
+#zaloguj:hover{
+background-color: rgba(255, 195, 77, 0.75);
+cursor: pointer;
+}
+
+#wyloguj{
+    position: absolute;
+  bottom:3%;
+  right: 3%;
+  padding: 1% 2.5%;
+  font-family: 'Merienda', cursive;
+  font-size: 1.1vw;
+  background-color: rgba(255, 195, 77, 0.6);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#wyloguj:hover{
+background-color: rgba(255, 195, 77, 0.75);
+cursor: pointer;
+}
+
+
+
+

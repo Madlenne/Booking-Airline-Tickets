@@ -1,0 +1,56 @@
+<html> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Linie lotnicze</title>
+        <link rel="stylesheet" type="text/css" href="css\rejestracja.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+	</head>
+	<body> 
+  <script src="js\strona.js" type="text/javascript" defer></script>
+		<div class="bg">
+		<div class="modal">
+          <div class="modalZawartosc">
+              <h2>Rejestracja</h2>
+				<form name="rejestracjaForm">
+					<div class="rejestracjaInput">
+					    <input type="text" id="imie" required=""> 
+						<label>Imie</label>
+					</div>
+					<div class="rejestracjaInput">
+					    <input type="text" id="nazwisko" required="">
+					    <label>Nazwisko</label>
+					</div>
+					<div class="rejestracjaInput">
+					    <input type="text" id="email" required="">
+					    <label>E-mail</label>
+					</div>
+					<div class="rejestracjaInput">
+					    <input type="number" id="dokument" required=""> 
+					    <label>Numer dokumentu</label>
+					</div>
+					<div class="rejestracjaInput">
+					    <input type="number" id="nrTel" required="">
+					    <label>Numer telefonu</label>
+					</div>
+					<div class="rejestracjaInput">
+					    <input type="text" id="dataUr" placeholder="YYYY-MM-DD" required 
+			pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" 
+			title="Podaj datę w formacie YYYY-MM-DD"/>
+					    <label>Data urodzenia</label>
+					</div>
+					<div class="rejestracjaInput">
+					    <input type="text" id="login" required=""> 
+					    <label>Login</label>
+					</div>
+					<div class="rejestracjaInput">
+					    <input type="password" id="haslo" required="">
+					    <label>Hasło</label>
+					</div>
+				    <input type="button" value="Zarejestruj" onclick="zarejestruj()" />
+				</form>
+
+			</div>
+      	</div>
+      </div>
+	</body> 
+</html>
